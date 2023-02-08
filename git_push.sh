@@ -1,15 +1,15 @@
-!#/bin/bash
+#!/bin/bash
 
 git add .
 
 git status
 
-quotations='"'
+quotation='"'
 
 echo "Type your commit message below, Mark"
 read commit
 
-git commit -m $quotation"commit"$quotation
+git commit -m $quotation"$commit"$quotation
 
 git push
 
